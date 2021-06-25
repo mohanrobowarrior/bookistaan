@@ -17,21 +17,21 @@ class Database extends Config
 
     public function getBook()
     {
-        $stmt = $this->conn->query("SELECT * FROM book ORDER BY bookID DESC ");
+        $stmt = $this->conn->query("SELECT * FROM book ORDER BY id DESC ");
         return $stmt->fetchAll();
     }
 
     public function getSingleBook($id)
     {
-        $stmt = $this->conn->query("SELECT * FROM book WHERE bookID = {$id} LIMIT 1");
+        $stmt = $this->conn->query("SELECT * FROM book WHERE id = {$id} LIMIT 1");
         return $stmt->fetchAll();
     }
 
     public function updateBook($id, $editBookName, $editAuthor, $editISBN) {
-         return $this->conn->query("UPDATE book SET bookTitle='$editBookName', author='$editAuthor', isbn='$editISBN' WHERE bookID=$id");
+         return $this->conn->query("UPDATE book SET bookTitle='$editBookName', author='$editAuthor', isbn='$editISBN' WHERE id=$id");
     }
 
     public function deleteBook($id) {
-        return $this->conn->query("DELETE FROM book WHERE bookID = $id");
+        return $this->conn->query("DELETE FROM book WHERE id = $id");
     }
 }

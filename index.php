@@ -72,7 +72,7 @@
                                             }
 
                                             if (isset($_GET["success"]) && $_GET["success"] === "updateMsg") {
-                                                showMessage("success", "Book edit successfully");
+                                                showMessage("success", "Book updated successfully");
                                             }
                                         ?>
                                         <table class="table table-responsive-sm">
@@ -100,8 +100,8 @@
                                                                         <td>' . $book["bookTitle"] . '</td>
                                                                         <td>' . $book["author"] . '</td>
                                                                         <td>' . $book["isbn"] . '</td>
-                                                                        <td><a href="edit.php?id=' . $book["bookID"] . '&action=edit" class="btn btn-success">Edit</a></td>
-                                                                        <td><a href="index.php?id=' . $book["bookID"] . '&action=delete" class="btn btn-danger">Delete</a></td>
+                                                                        <td><a href="edit.php?id=' . $book["id"] . '&action=edit" class="btn btn-success">Edit</a></td>
+                                                                        <td><a href="index.php?id=' . $book["id"] . '&action=delete" class="btn btn-danger">Delete</a></td>
                                                                     </tr>';
                                                     }
                                                     echo $output;

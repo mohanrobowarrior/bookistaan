@@ -25,7 +25,7 @@ if (isset($_POST["submit"])) {
 if (isset($_POST["update"])) {
 //    echo "<pre>";
 //    print_r($_POST);exit();
-    $bookID = test_input($_POST["bookID"]);
+    $bookID = test_input($_POST["id"]);
     $editBookName = test_input($_POST["editbookname"]);
     $editAuthor = test_input($_POST["editauthor"]);
     $editISBN = test_input($_POST["editisbn"]);

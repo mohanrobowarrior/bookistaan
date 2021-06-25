@@ -40,7 +40,7 @@ if (isset($_GET["id"]) && $_GET["action"] === "edit") {
                                                 <div class="form-group row">
                                                     <label class="col-md-3 col-form-label" for="bookname">Book Name</label>
                                                     <div class="col-md-9">
-                                                        <input type="hidden" name="bookID" value="<?php echo (int)$editData[0]["bookID"]?>">
+                                                        <input type="hidden" name="id" value="<?php echo (int)$editData[0]["id"]?>">
                                                         <input class="form-control" id="bookname" type="text" name="editbookname" value="<?php echo $editData[0]["bookTitle"]; ?>" placeholder="Enter Book Name..">
                                                     </div>
                                                 </div>
