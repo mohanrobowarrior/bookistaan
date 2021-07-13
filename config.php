@@ -14,7 +14,7 @@ class Config {
             $this->conn = new PDO($this->dsn, $this->user, $this->password);
             $this->conn->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_ASSOC);
         } catch (PDOException $e) {
-            die("Error:" . $e->getMessage());
+            die("Error: Server error, please try later!");
         }
     }
 }

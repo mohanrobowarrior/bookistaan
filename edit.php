@@ -43,13 +43,13 @@ if (isset($_GET["id"]) && $_GET["action"] === "edit") {
                                                         <input type="hidden" name="id" value="<?php echo (int)$editData[0]["id"]?>">
                                                         <input class="form-control" id="bookname" type="text" name="editbookname" value="<?php echo $editData[0]["bookTitle"]; ?>" placeholder="Enter Book Name..">
                                                     </div>
-                                                </div>
+                                                </div><br>
                                                 <div class="form-group row">
                                                     <label class="col-md-3 col-form-label" for="author">Author</label>
                                                     <div class="col-md-9">
                                                         <input class="form-control" id="author" type="text" name="editauthor" value="<?php echo $editData[0]["author"]; ?>" placeholder="Enter Author Name..">
                                                     </div>
-                                                </div>
+                                                </div><br>
                                                 <div class="form-group row">
                                                     <label class="col-md-3 col-form-label" for="isbn">ISBN</label>
                                                     <div class="col-md-9">

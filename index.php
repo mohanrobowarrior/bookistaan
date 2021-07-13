@@ -38,13 +38,13 @@
                                                     <div class="col-md-9">
                                                         <input class="form-control" id="bookname" type="text" name="bookname" value="<?php if (isset($_GET["bookname"])){ echo $_GET["bookname"]; }?>" placeholder="Enter Book Name..">
                                                     </div>
-                                                </div>
+                                                </div><br>
                                                 <div class="form-group row">
                                                     <label class="col-md-3 col-form-label" for="author">Author</label>
                                                     <div class="col-md-9">
                                                         <input class="form-control" id="author" type="text" name="author" value="<?php if (isset($_GET["author"])){ echo $_GET["author"]; }?>" placeholder="Enter Author Name..">
                                                     </div>
-                                                </div>
+                                                </div><br>
                                                 <div class="form-group row">
                                                     <label class="col-md-3 col-form-label" for="isbn">ISBN</label>
                                                     <div class="col-md-9">
